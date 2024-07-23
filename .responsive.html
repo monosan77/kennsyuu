@@ -12,6 +12,23 @@
     <div class="container">
 
     </div>
+
 </body>
+<script>
+    function aaa(arg) {
+        if (arg === undefined) {
+            throw new Error("ng")
+        }
+    }
+    function bbb() {
+        try {
+            aaa();
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    bbb();
+
+</script>
 
 </html>
